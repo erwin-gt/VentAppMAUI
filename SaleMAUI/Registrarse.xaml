@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SaleMAUI.Registrarse"
+             Shell.NavBarIsVisible="False"
+             Title="Registrarse">
+    <Grid RowDefinitions="1*,8*,1*">
+        <Frame BackgroundColor="LightBlue"
+               Grid.Row="0"
+               HorizontalOptions="EndAndExpand"
+               Padding="0"
+               Margin="0,-80,-80,0"
+               HeightRequest="250"
+               WidthRequest="250"
+               CornerRadius="125">
+        </Frame>
+
+        <Frame BackgroundColor="{x:StaticResource Primary}"
+               Grid.Row="0" 
+               HorizontalOptions="EndAndExpand"
+               Padding="0"
+               Margin="0,-120,-120,0"
+               HeightRequest="250"
+               WidthRequest="250"
+               CornerRadius="125">
+        </Frame>
+
+        <Frame BackgroundColor="#cfd0d8"
+               VerticalOptions="EndAndExpand"
+               Grid.Row="2"
+               HorizontalOptions="EndAndExpand"
+               Padding="0"
+               Margin="0,0,200,150"
+               HeightRequest="250"
+               WidthRequest="250"
+               CornerRadius="125">
+        </Frame>
+
+        <Frame BackgroundColor="{x:StaticResource Primary}"
+               Grid.Row="2" 
+               HorizontalOptions="EndAndExpand"
+               Padding="0"
+               Margin="0,-120,0,0"
+               HeightRequest="250"
+               WidthRequest="250"
+               CornerRadius="125">
+        </Frame>
+        <Frame BackgroundColor="White"
+               Grid.Row="1"
+               VerticalOptions="CenterAndExpand"
+               Margin="50,0,50,0"
+               CornerRadius="20.5"
+               BorderColor="Transparent"
+               Opacity="0.8"
+               >
+
+            <VerticalStackLayout Spacing="30">
+                <Frame Padding="10" CornerRadius="15" BorderColor="Black">
+                    <Grid ColumnDefinitions="25,*">
+                        <Entry Placeholder="Correo Electronico" PlaceholderColor="{x:StaticResource Primary}" Grid.Column="1" HorizontalOptions="Center"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Padding="10" CornerRadius="15" BorderColor="Black">
+                    <Grid ColumnDefinitions="25,*">
+                        <Entry Placeholder="Contraseña" IsPassword="True" PlaceholderColor="{x:StaticResource Primary}" Grid.Column="1" HorizontalOptions="Center"/>
+                    </Grid>
+
+
+
+                </Frame>
+                <Button Text="Registrarse" FontSize="20" FontAttributes="Bold" BackgroundColor="Black" CornerRadius="15"/>
+                
+                <HorizontalStackLayout Spacing="20" HorizontalOptions="End">
+                    <Label Text="Iniciar Sesion" FontSize="18" FontAttributes="Bold"/>
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_For_Login"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            
+
+        </Frame>
+
+        
+        
+    </Grid>
+</ContentPage>

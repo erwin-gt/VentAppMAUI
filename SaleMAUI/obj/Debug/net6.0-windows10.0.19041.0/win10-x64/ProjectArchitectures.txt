@@ -1,0 +1,1 @@
+C:\Users\triun\source\repos\SaleMAUI\SaleMAUI\SaleMAUI.csproj;x64
